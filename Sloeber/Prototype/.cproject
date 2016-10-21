@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="it.baeyens.arduino.core.toolChain.release.1881590141">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="it.baeyens.arduino.core.toolChain.release.1881590141" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="it.baeyens.arduino.core.toolChain.release.1881590141" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="it.baeyens.arduino.core.toolChain.release.1881590141.695918265" name="/" resourcePath="">
+						<toolChain id="it.baeyens.arduino.core.toolChain.release.1331688674" name="Arduino Toolchain" superClass="it.baeyens.arduino.core.toolChain.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="it.baeyens.arduino.targetplatform.1349587331" name="Arduino Target" osList="all" superClass="it.baeyens.arduino.targetplatform"/>
+							<builder buildPath="${workspace_loc:/Prototype}/Release" id="it.baeyens.arduino.sketch.builder.1564945673" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" superClass="it.baeyens.arduino.sketch.builder"/>
+							<tool id="it.baeyens.arduino.tool.sketch.compiler.cpp.1452208528" name="Arduino C++ Compiler" superClass="it.baeyens.arduino.tool.sketch.compiler.cpp">
+								<option id="it.baeyens.arduino.compiler.cpp.sketch.option.incpath.2105667869" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.cpp.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306"/>
+								</option>
+								<inputType id="it.baeyens.arduino.compiler.cpp.sketch.input.421494975" name="CPP source files" superClass="it.baeyens.arduino.compiler.cpp.sketch.input"/>
+							</tool>
+							<tool id="it.baeyens.arduino.tool.compiler.c.1266973378" name="Arduino C Compiler" superClass="it.baeyens.arduino.tool.compiler.c">
+								<option id="it.baeyens.arduino.compiler.c.sketch.option.incpath.674479590" name="Include Paths (-I)" superClass="it.baeyens.arduino.compiler.c.sketch.option.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/Wire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/Wire/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/SPI}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/Prototype/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX"/>
+									<listOptionValue builtIn="false" value="/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306"/>
+								</option>
+								<inputType id="it.baeyens.arduino.compiler.c.sketch.input.931829311" name="C Source Files" superClass="it.baeyens.arduino.compiler.c.sketch.input"/>
+							</tool>
+							<tool id="it.baeyens.arduino.tool.sketch.compiler.s.1809753173" name="Arduino Assembler" superClass="it.baeyens.arduino.tool.sketch.compiler.s"/>
+							<tool id="it.baeyens.arduino.tool.ar.668861736" name="Arduino archiver" superClass="it.baeyens.arduino.tool.ar"/>
+							<tool id="it.baeyens.arduino.tool.combine.442444539" name="Arduino combiner" superClass="it.baeyens.arduino.tool.combine"/>
+							<tool id="it.baeyens.arduino.tool.objcopy.eep.272623532" name="Arduino tool Create eeprom" superClass="it.baeyens.arduino.tool.objcopy.eep"/>
+							<tool id="it.baeyens.arduino.tool.size.364783355" name="Arduino tool Print Size" superClass="it.baeyens.arduino.tool.size"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/**/test*/**|libraries/?*/**/third-party/**|libraries**/._*" flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="Prototype.null.1614176794" name="Prototype"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+</cproject>

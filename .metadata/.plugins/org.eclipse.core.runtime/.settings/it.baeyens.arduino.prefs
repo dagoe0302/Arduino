@@ -1,0 +1,5 @@
+Automatically\ import\ libraries=true
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=/Users/mkd/Arduino/libraries
+Private\ hardware\ Path=/Users/mkd/Arduino/hardware
+eclipse.preferences.version=1

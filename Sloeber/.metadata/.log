@@ -1,0 +1,25 @@
+!SESSION 2016-10-21 13:30:56.960 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective -keyring /Users/mkd/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -perspective it.baeyens.arduino.application.perspective -keyring /Users/mkd/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-21 13:31:12.557
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY it.baeyens.arduino.core 1 0 2016-10-21 13:32:14.318
+!MESSAGE The folder /Users/mkd/Arduino/hardware' does not contain any files.
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-21 13:32:41.655
+!MESSAGE Indexed 'Prototype' (34 sources, 86 headers) in 2 sec: 4.496 declarations; 12.504 references; 7 unresolved inclusions; 0 syntax errors; 44 unresolved names (0,26 %)
+
+!ENTRY it.baeyens.arduino.core 1 0 2016-10-21 13:32:41.861
+!MESSAGE list of libraries to add to project Prototype: [Wire, SPI]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-21 13:33:43.729
+!MESSAGE Indexed 'Prototype' (37 sources, 92 headers) in 1,03 sec: 4.880 declarations; 14.027 references; 0 unresolved inclusions; 0 syntax errors; 11 unresolved names (0,058 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-10-21 13:34:28.210
+!MESSAGE Indexed 'Prototype' (37 sources, 92 headers) in 0,862 sec: 4.880 declarations; 14.027 references; 0 unresolved inclusions; 0 syntax errors; 11 unresolved names (0,058 %)

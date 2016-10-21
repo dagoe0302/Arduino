@@ -1,0 +1,14 @@
+714=1
+Automatically\ import\ libraries=true
+Board=Arduino/Genuino Mega or Mega 2560
+Board\ custom\ option\ selections=Processor\=ATmega2560 (Mega 2560)
+Boards\ file=/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/boards.txt
+JANTJE.TEMPLATE_FOLDER=
+JANTJE.TEMPLATE_USE_DEFAULT=0
+Last\ used\ Examples=
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=/Users/mkd/Arduino/libraries
+Private\ hardware\ Path=/Users/mkd/Arduino/hardware
+UPLOAD.PROTOCOL=Default
+Upload\ port=
+eclipse.preferences.version=1
