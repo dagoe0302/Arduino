@@ -461,21 +461,27 @@ void Setup()
   /*Serial.println(timeoutarray[1]);
   Serial.println(timeoutarray[2]);
   Serial.println(timeoutarray[3]);*/
+  //Serial.println("Init done");
   // init done
 }
 
 void Main(void)
 {
+  long test_read;
+
   Setup();
 
   while(1)
   {
     input = cSystem.GetNotifyList();
-
+    //Serial.println("GetNotifyList");
+    //Serial.println(timeoutarray[SYSTEM_TIMER]);
+    test_read = timeoutarray[SYSTEM_TIMER];
     switch(input)
     {
       case UPDATE_SYSTEM_TIME://SystemTimer notify
       {
+    	//Serial.println("Update system time");
         UpdateSystemTime();
         if (LedToggle == 1)
         {
