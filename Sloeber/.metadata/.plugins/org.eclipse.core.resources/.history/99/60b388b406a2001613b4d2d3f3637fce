@@ -1,0 +1,6 @@
+#include <DHT.h>
+
+#define DHTTYPE DHT11   // DHT 11
+
+// Prototypes
+DHT dht(PIN_DHT11, DHTTYPE);

@@ -78,11 +78,20 @@ typedef union
   long val;
 } NOTIFY_LIST;
 
+#define YES 1
+#define NO  0
+
 #define UPDATE_SYSTEM_TIME A00
 #define UPDATE_DISPLAY     A01
 #define READ_BUTTON        A02
 #define READ_TEMP          A03
 #define BUTTON_PUSHED      A04
+
+#define PIN_SERIAL_RX 0 // Placeholder for serial monitor comm
+#define PIN_SERIAL_TX 1 // Placeholder for serial monitor comm
+#define PIN_BUTTON    2 // Connect 2-pin button to this pin and GND
+#define PIN_DHT11     3 // DHT11 data pin
+#define PIN_LED       13
 
 typedef struct TimeUnits
 {
