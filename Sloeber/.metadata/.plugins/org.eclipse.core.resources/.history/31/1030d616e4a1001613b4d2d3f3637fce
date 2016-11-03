@@ -1,0 +1,22 @@
+typedef enum
+{
+  SYSTEM_TIMER,
+  DISPLAY_TIMER,
+  DHT11_TIMER,
+  BUTTON_TIMER,
+  NOF_TIMERS
+} TIMER_ID;
+
+typedef void (*P_TIMER_FUNC)(void);
+
+const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
+{
+  SystemTimer,
+  DisplayTimer,
+  Dht11Timer,
+  ButtonTimer,
+};
+
+extern void StopTimer(TIMER_ID id);
+extern void StartTimer(TIMER_ID id, long time_out);
+extern void InitTimer(void);

@@ -245,3 +245,391 @@ Total                      24948
 
 Finished building target: Prototype
  
+17:34:24 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:10:7: error: 'P_TIMER_FUNC' does not name a type
+ const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
+       ^
+../Main.cpp: In function 'void iButtonPushed()':
+../Main.cpp:299:47: error: 'StartTimer' was not declared in this scope
+   StartTimer(BUTTON_TIMER, BUTTON_PUSH_TIMEOUT);
+                                               ^
+../Main.cpp: In function 'void SystemTimer()':
+../Main.cpp:314:42: error: 'StartTimer' was not declared in this scope
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                                          ^
+../Main.cpp: In function 'void DisplayTimer()':
+../Main.cpp:320:43: error: 'StartTimer' was not declared in this scope
+   StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+                                           ^
+../Main.cpp: In function 'void Dht11Timer()':
+../Main.cpp:326:42: error: 'StartTimer' was not declared in this scope
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                                          ^
+../Main.cpp: In function 'void Setup()':
+../Main.cpp:372:42: error: 'StartTimer' was not declared in this scope
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                                          ^
+../Main.cpp: In function 'void MainLoop()':
+../Main.cpp:451:52: error: 'StartTimer' was not declared in this scope
+        StartTimer(BUTTON_TIMER, BUTTON_PUSH_TIMEOUT);
+                                                    ^
+make: *** [Main.cpp.o] Error 1
+17:35:25 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:10:7: error: 'P_TIMER_FUNC' does not name a type
+ const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
+       ^
+../Main.cpp: In function 'void iButtonPushed()':
+../Main.cpp:299:47: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(BUTTON_TIMER, BUTTON_PUSH_TIMEOUT);
+                                               ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp: In function 'void SystemTimer()':
+../Main.cpp:314:42: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                                          ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp: In function 'void DisplayTimer()':
+../Main.cpp:320:43: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+                                           ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp: In function 'void Dht11Timer()':
+../Main.cpp:326:42: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                                          ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp: In function 'void Setup()':
+../Main.cpp:372:42: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                                          ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp:373:42: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                                          ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+../Main.cpp: In function 'void MainLoop()':
+../Main.cpp:451:52: error: too many arguments to function 'void StartTimer(TIMER_ID)'
+        StartTimer(BUTTON_TIMER, BUTTON_PUSH_TIMEOUT);
+                                                    ^
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:19:13: note: declared here
+ extern void StartTimer(TIMER_ID id);
+             ^
+make: *** [Main.cpp.o] Error 1
+17:35:52 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:10:7: error: 'P_TIMER_FUNC' does not name a type
+ const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
+       ^
+make: *** [Main.cpp.o] Error 1
+17:37:33 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+In file included from ../Main.cpp:7:0:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:14:3: error: 'SystemTimer' was not declared in this scope
+   SystemTimer,
+   ^
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:15:3: error: 'DisplayTimer' was not declared in this scope
+   DisplayTimer,
+   ^
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:16:3: error: 'Dht11Timer' was not declared in this scope
+   Dht11Timer,
+   ^
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:17:3: error: 'ButtonTimer' was not declared in this scope
+   ButtonTimer,
+   ^
+make: *** [Main.cpp.o] Error 1
+17:39:30 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+Finished building: ../Main.cpp
+ 
+Building file: ../system.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"system.cpp.d" -MT"system.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../system.cpp" -o "system.cpp.o"  -Wall
+Finished building: ../system.cpp
+ 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+../Timer.cpp:10:3: error: 'SystemTimer' was not declared in this scope
+   SystemTimer,
+   ^
+../Timer.cpp:11:3: error: 'DisplayTimer' was not declared in this scope
+   DisplayTimer,
+   ^
+../Timer.cpp:12:3: error: 'Dht11Timer' was not declared in this scope
+   Dht11Timer,
+   ^
+../Timer.cpp:13:3: error: 'ButtonTimer' was not declared in this scope
+   ButtonTimer,
+   ^
+../Timer.cpp: In function 'void SystemTimer()':
+../Timer.cpp:20:10: error: 'UPDATE_SYSTEM_TIME' was not declared in this scope
+   Notify(UPDATE_SYSTEM_TIME);
+          ^
+../Timer.cpp:21:28: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                            ^
+../Timer.cpp: In function 'void DisplayTimer()':
+../Timer.cpp:27:29: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+                             ^
+../Timer.cpp: In function 'void Dht11Timer()':
+../Timer.cpp:32:10: error: 'READ_TEMP' was not declared in this scope
+   Notify(READ_TEMP);
+          ^
+../Timer.cpp:33:27: error: 'FIVE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                           ^
+../Timer.cpp: In function 'void ButtonTimer()':
+../Timer.cpp:38:10: error: 'BUTTON_PUSHED' was not declared in this scope
+   Notify(BUTTON_PUSHED);
+          ^
+make: *** [Timer.cpp.o] Error 1
+17:40:19 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+../Timer.cpp:13:3: error: 'DisplayTimer' was not declared in this scope
+   DisplayTimer,
+   ^
+../Timer.cpp:14:3: error: 'Dht11Timer' was not declared in this scope
+   Dht11Timer,
+   ^
+../Timer.cpp:15:3: error: 'ButtonTimer' was not declared in this scope
+   ButtonTimer,
+   ^
+../Timer.cpp: In function 'void SystemTimer()':
+../Timer.cpp:22:10: error: 'UPDATE_SYSTEM_TIME' was not declared in this scope
+   Notify(UPDATE_SYSTEM_TIME);
+          ^
+../Timer.cpp:23:28: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                            ^
+../Timer.cpp: In function 'void DisplayTimer()':
+../Timer.cpp:29:29: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+                             ^
+../Timer.cpp: In function 'void Dht11Timer()':
+../Timer.cpp:34:10: error: 'READ_TEMP' was not declared in this scope
+   Notify(READ_TEMP);
+          ^
+../Timer.cpp:35:27: error: 'FIVE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                           ^
+../Timer.cpp: In function 'void ButtonTimer()':
+../Timer.cpp:40:10: error: 'BUTTON_PUSHED' was not declared in this scope
+   Notify(BUTTON_PUSHED);
+          ^
+make: *** [Timer.cpp.o] Error 1
+17:40:55 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+../Timer.cpp: In function 'void SystemTimer()':
+../Timer.cpp:25:10: error: 'UPDATE_SYSTEM_TIME' was not declared in this scope
+   Notify(UPDATE_SYSTEM_TIME);
+          ^
+../Timer.cpp:26:28: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
+                            ^
+../Timer.cpp: In function 'void DisplayTimer()':
+../Timer.cpp:32:29: error: 'ONE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+                             ^
+../Timer.cpp: In function 'void Dht11Timer()':
+../Timer.cpp:37:10: error: 'READ_TEMP' was not declared in this scope
+   Notify(READ_TEMP);
+          ^
+../Timer.cpp:38:27: error: 'FIVE_SEC_TIMOUT' was not declared in this scope
+   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
+                           ^
+../Timer.cpp: In function 'void ButtonTimer()':
+../Timer.cpp:43:10: error: 'BUTTON_PUSHED' was not declared in this scope
+   Notify(BUTTON_PUSHED);
+          ^
+make: *** [Timer.cpp.o] Error 1
+17:41:49 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+Finished building: ../Main.cpp
+ 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+../Timer.cpp: In function 'void SystemTimer()':
+../Timer.cpp:25:10: error: 'UPDATE_SYSTEM_TIME' was not declared in this scope
+   Notify(UPDATE_SYSTEM_TIME);
+          ^
+../Timer.cpp: In function 'void Dht11Timer()':
+../Timer.cpp:37:10: error: 'READ_TEMP' was not declared in this scope
+   Notify(READ_TEMP);
+          ^
+../Timer.cpp: In function 'void ButtonTimer()':
+../Timer.cpp:43:10: error: 'BUTTON_PUSHED' was not declared in this scope
+   Notify(BUTTON_PUSHED);
+          ^
+make: *** [Timer.cpp.o] Error 1
+17:48:10 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Main.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
+Finished building: ../Main.cpp
+ 
+Building file: ../system.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"system.cpp.d" -MT"system.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../system.cpp" -o "system.cpp.o"  -Wall
+Finished building: ../system.cpp
+ 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+Finished building: ../Timer.cpp
+ 
+Starting combiner
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Main.cpp.o ./Timer.cpp.o ./system.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
+Finished building: Prototype.elf
+ 
+Create eeprom image
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -R .eeprom  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.hex"
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.eep"
+Finished building: Prototype.hex
+ 
+Building target: Prototype
+Printing size:
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
+section                     size      addr
+.data                       1292   8389120
+.text                      16236         0
+.bss                         425   8390412
+.comment                      17         0
+.note.gnu.avr.deviceinfo      64         0
+.debug_info                 3004         0
+.debug_abbrev               2842         0
+.debug_line                   26         0
+.debug_str                   998         0
+Total                      24904
+
+
+Finished building target: Prototype
+ 
+17:49:19 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building file: ../Timer.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
+Finished building: ../Timer.cpp
+ 
+Starting combiner
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Main.cpp.o ./Timer.cpp.o ./system.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
+Finished building: Prototype.elf
+ 
+Create eeprom image
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -R .eeprom  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.hex"
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.eep"
+Finished building: Prototype.hex
+ 
+Building target: Prototype
+Printing size:
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
+section                     size      addr
+.data                       1292   8389120
+.text                      16236         0
+.bss                         425   8390412
+.comment                      17         0
+.note.gnu.avr.deviceinfo      64         0
+.debug_info                 3004         0
+.debug_abbrev               2842         0
+.debug_line                   26         0
+.debug_str                   998         0
+Total                      24904
+
+
+Finished building target: Prototype
+ 
+17:49:23 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building target: Prototype
+Printing size:
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
+section                     size      addr
+.data                       1292   8389120
+.text                      16236         0
+.bss                         425   8390412
+.comment                      17         0
+.note.gnu.avr.deviceinfo      64         0
+.debug_info                 3004         0
+.debug_abbrev               2842         0
+.debug_line                   26         0
+.debug_str                   998         0
+Total                      24904
+
+
+Finished building target: Prototype
+ 
+17:49:39 **** Incremental Build of configuration Release for project Prototype ****
+make all 
+Building target: Prototype
+Printing size:
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
+section                     size      addr
+.data                       1292   8389120
+.text                      16236         0
+.bss                         425   8390412
+.comment                      17         0
+.note.gnu.avr.deviceinfo      64         0
+.debug_info                 3004         0
+.debug_abbrev               2842         0
+.debug_line                   26         0
+.debug_str                   998         0
+Total                      24904
+
+
+Finished building target: Prototype
+ 

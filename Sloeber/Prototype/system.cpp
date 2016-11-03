@@ -1,5 +1,5 @@
+#include <System.h>
 #include "Arduino.h"
-#include "system.h"
 
 static const unsigned long notify_mask[32] = {
   0x00000001,

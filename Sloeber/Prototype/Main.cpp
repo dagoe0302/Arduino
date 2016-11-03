@@ -1,9 +1,10 @@
-#include "system.h"
 #include <Wire.h>
 #include <Arduino.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <DHT.h>
+#include <System.h>
+#include <Timer.h>
 
 #define YES 1
 #define NO  0
@@ -14,15 +15,7 @@
 #define PIN_DHT11     3 // DHT11 data pin
 #define PIN_LED       13
 
-#define UPDATE_SYSTEM_TIME A00
-#define UPDATE_DISPLAY     A01
-#define READ_BUTTON        A02
-#define READ_TEMP          A03
-#define BUTTON_PUSHED      A04
 
-#define ONE_SEC_TIMOUT      100
-#define FIVE_SEC_TIMOUT     500
-#define BUTTON_PUSH_TIMEOUT  30
 
 #define ASCII_OFFSET 48
 #define OLED_RESET 4
@@ -31,27 +24,10 @@
 #define DISPLAY_SYSTEM_TIME_BOTTOM_LINE 12
 #define NOF_DISPLAY_VIEWS 3
 
-#define TIMER_VACANT -2    /* The timer is not in use */
-typedef void (*P_TIMER_FUNC)(void);
-
-typedef enum
-{
-  SYSTEM_TIMER,
-  DISPLAY_TIMER,
-  DHT11_TIMER,
-  BUTTON_TIMER,
-  NOF_TIMERS
-} TIMER_ID;
-
 // Prototypes
 Adafruit_SSD1306 display(OLED_RESET);
 DHT dht(PIN_DHT11, DHTTYPE);
 //System cSystem;
-
-extern void SystemTimer(void);
-extern void DisplayTimer(void);
-extern void Dht11Timer(void);
-extern void ButtonTimer(void);
 
 struct TimeUnits
 {
@@ -60,14 +36,6 @@ struct TimeUnits
   uint8_t hour;
   uint8_t day;
   uint8_t year;
-};
-
-const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
-{
-  SystemTimer,
-  DisplayTimer,
-  Dht11Timer,
-  ButtonTimer,
 };
 
 // bitmap created here: http://javl.github.io/image2cpp/
@@ -139,7 +107,6 @@ const unsigned char deer_jumping [] PROGMEM = {
 };
 
 struct TimeUnits system_time;
-static long timeoutarray[NOF_TIMERS];
 boolean HasButtonBeenPushed = NO;
 boolean LedToggle = 0;
 static NOTIFY_ELEMENT_TYPE input;
@@ -274,71 +241,6 @@ void DisplayUpdate(uint8_t ViewNo)
   display.display();
 }
 
-void HandleTimerTicks(void)
-{
-  byte count;
-
-  test_read++;
-
-  for (count = 0; count < NOF_TIMERS; count++)
-  {
-    if(timeoutarray[count] > 0)
-    {
-      timeoutarray[count]--;
-      if(timeoutarray[count] == 0)
-      {
-        timer_func_array[count]();
-      }
-    }
-  }
-}
-
-ISR(TIMER1_COMPA_vect)
-{
-  HandleTimerTicks();
-}
-
-void StopTimer(TIMER_ID id)
-{
-  timeoutarray[id] = TIMER_VACANT;
-}
-
-void StartTimer(TIMER_ID id, long time_out)
-{
-  timeoutarray[id] = time_out;
-}
-
-void InitTimer()
-{
-  byte count;
-
-  DisableInterrupts();//stop interrupts
-  //cSystem.DisableInterrupts();//stop interrupts
-
-  for(count = 0; count < NOF_TIMERS; count++)
-  {
-    timeoutarray[count] = TIMER_VACANT;
-  }
-
-  //set timer1 interrupt at 1Hz
-  TCCR1A = 0;// set entire TCCR1A register to 0
-  TCCR1B = 0;// same for TCCR1B
-  TCNT1  = 0;//initialize counter value to 0
-  // set compare match register for 100hz increments
-  OCR1A = 19999;// = (16*10^6) / (8*100) - 1 (must be <65536)
-  // turn on CTC mode
-  TCCR1B |= (1 << WGM12);
-  // Set CS11 bit for 8 prescaler
-  TCCR1B |= (1 << CS11);
-  // enable timer compare interrupt
-  TIMSK1 |= (1 << OCIE1A);
-
-  EnableInterrupts();//allow interrupts
-}
-
-  // Set CS10 and CS12 bits for 1024 prescaler
-  //TCCR1B |= (1 << CS12) | (1 << CS10);
-
 void InitSystemTime(void)
 {
   system_time.second = 0;
@@ -393,29 +295,6 @@ void InitButton(void)
   attachInterrupt(digitalPinToInterrupt(PIN_BUTTON), iButtonPushed, HIGH);
 }
 
-void SystemTimer(void)
-{
-  Notify(UPDATE_SYSTEM_TIME);
-  StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
-}
-
-void DisplayTimer(void)
-{
-//  cSystem.Notify(UPDATE_DISPLAY);
-  StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
-}
-
-void Dht11Timer(void)
-{
-  Notify(READ_TEMP);
-  StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
-}
-
-void ButtonTimer(void)
-{
-  Notify(BUTTON_PUSHED);
- // StartTimer(BUTTON_TIMER, BUTTON_READ_TIMEOUT);
-}
 
 void SetButtonPush(void)
 {

@@ -1,4 +1,5 @@
 system.cpp.o: ../system.cpp \
+ /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/binary.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/WCharacter.h \
@@ -9,8 +10,9 @@ system.cpp.o: ../system.cpp \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Printable.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/USBAPI.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h \
- /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega/pins_arduino.h \
- /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/system.h
+ /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega/pins_arduino.h
+
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:
 
 /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h:
 
@@ -33,5 +35,3 @@ system.cpp.o: ../system.cpp \
 /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h:
 
 /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega/pins_arduino.h:
-
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/system.h:
