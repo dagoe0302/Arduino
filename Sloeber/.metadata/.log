@@ -111,3 +111,12 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -perspective it.baeye
 
 !ENTRY org.eclipse.core.net 1 0 2016-11-03 16:54:02.576
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY it.baeyens.arduino.core 4 0 2016-11-03 18:52:32.215
+!MESSAGE No project found to build
+
+!ENTRY it.baeyens.arduino.core 4 0 2016-11-03 19:07:05.351
+!MESSAGE No project found to build
+
+!ENTRY it.baeyens.arduino.core 4 0 2016-11-03 19:08:03.155
+!MESSAGE No project found to build

@@ -15,8 +15,6 @@
 #define PIN_DHT11     3 // DHT11 data pin
 #define PIN_LED       13
 
-
-
 #define ASCII_OFFSET 48
 #define OLED_RESET 4
 #define DHTTYPE DHT11   // DHT 11
@@ -28,15 +26,6 @@
 Adafruit_SSD1306 display(OLED_RESET);
 DHT dht(PIN_DHT11, DHTTYPE);
 //System cSystem;
-
-struct TimeUnits
-{
-  uint8_t second;
-  uint8_t minute;
-  uint8_t hour;
-  uint8_t day;
-  uint8_t year;
-};
 
 // bitmap created here: http://javl.github.io/image2cpp/
 const unsigned char deer_jumping [] PROGMEM = {
@@ -106,7 +95,7 @@ const unsigned char deer_jumping [] PROGMEM = {
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 };
 
-struct TimeUnits system_time;
+
 boolean HasButtonBeenPushed = NO;
 boolean LedToggle = 0;
 static NOTIFY_ELEMENT_TYPE input;
@@ -120,29 +109,32 @@ long test_read = 0;
 void DisplaySystemInfo(void)
 {
   uint8_t digit = 0;
+  sTimeUnits *local_time;
+
+  local_time = GetSystemTime();
 
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(5,3);
   display.print("Elapsed: ");
-  digit = system_time.day/10;
+  digit = local_time->day/10;
   display.write(digit + ASCII_OFFSET);
-  digit = system_time.day%10;
-  display.write(digit + ASCII_OFFSET);
-  display.print(":");
-  digit = system_time.hour/10;
-  display.write(digit + ASCII_OFFSET);
-  digit = system_time.hour%10;
+  digit = local_time->day%10;
   display.write(digit + ASCII_OFFSET);
   display.print(":");
-  digit = system_time.minute/10;
+  digit = local_time->hour/10;
   display.write(digit + ASCII_OFFSET);
-  digit = system_time.minute%10;
+  digit = local_time->hour%10;
   display.write(digit + ASCII_OFFSET);
   display.print(":");
-  digit = system_time.second/10;
+  digit = local_time->minute/10;
   display.write(digit + ASCII_OFFSET);
-  digit = system_time.second%10;
+  digit = local_time->minute%10;
+  display.write(digit + ASCII_OFFSET);
+  display.print(":");
+  digit = local_time->second/10;
+  display.write(digit + ASCII_OFFSET);
+  digit = local_time->second%10;
   display.write(digit + ASCII_OFFSET);
   //display time end
 }
@@ -239,42 +231,6 @@ void DisplayUpdate(uint8_t ViewNo)
     break;
   }
   display.display();
-}
-
-void InitSystemTime(void)
-{
-  system_time.second = 0;
-  system_time.minute = 0;
-  system_time.hour = 0;
-  system_time.day = 0;
-  system_time.year = 0;
-}
-
-void UpdateSystemTime(void)
-{
-  //call every second
-  system_time.second++;
-
-  if (system_time.second > 59)
-  {
-    system_time.second = 0;
-    system_time.minute++;
-    if (system_time.minute > 59)
-    {
-      system_time.minute = 0;
-      system_time.hour++;
-      if (system_time.hour > 23)
-      {
-        system_time.hour = 0;
-        system_time.day++;
-        if (system_time.day > 365)
-        {
-          system_time.day = 0;
-          system_time.year++;
-        }
-      }
-    }
-  }
 }
 
 void iButtonPushed(void)

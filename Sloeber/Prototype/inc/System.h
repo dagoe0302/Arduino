@@ -84,6 +84,15 @@ typedef union
 #define READ_TEMP          A03
 #define BUTTON_PUSHED      A04
 
+typedef struct TimeUnits
+{
+  uint8_t second;
+  uint8_t minute;
+  uint8_t hour;
+  uint8_t day;
+  uint8_t year;
+} sTimeUnits;
+
 /*class System
 {
   public:
@@ -96,9 +105,11 @@ typedef union
 
 extern void Notify(NOTIFY_ELEMENT_TYPE);
 extern void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element);
-
 extern NOTIFY_ELEMENT_TYPE GetNotifyList(void);
 extern void EnableInterrupts(void);
 extern void DisableInterrupts(void);
+extern sTimeUnits *GetSystemTime(void);
+extern void UpdateSystemTime(void);
+extern void InitSystemTime(void);
 
 #endif
