@@ -3,11 +3,12 @@
 void setup()
 {
 // Add your initialization code here
+	Setup();
 }
 
 // The loop function is called in an endless loop
 void loop()
 {
 //Add your repeated code here
-  Main();
+  MainLoop();
 }

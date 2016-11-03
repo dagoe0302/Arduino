@@ -1,0 +1,15 @@
+void Setup()
+{
+	  Serial.begin(9600);
+	  Serial.println("Start");
+}
+
+void Main(void)
+{
+	  Setup();
+
+	  while(1)
+	  {
+
+	  }
+}

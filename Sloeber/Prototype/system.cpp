@@ -38,7 +38,7 @@ static const unsigned long notify_mask[32] = {
 
 static NOTIFY_LIST notify_list;
 
-void System::ClearNotify(NOTIFY_ELEMENT_TYPE notify_element)
+extern void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element)
 /*--------------------------------------------------------------
 Input    : -
 Output   : -             See SPC-file
@@ -65,7 +65,7 @@ Function : -
   //}
 }
 
-void System::Notify(NOTIFY_ELEMENT_TYPE notify_element)
+extern void Notify(NOTIFY_ELEMENT_TYPE notify_element)
 /*--------------------------------------------------------------
 Input    : -
 Output   : -             See SPC-file
@@ -92,7 +92,7 @@ Function : -
 //  }
 }
 
-NOTIFY_ELEMENT_TYPE System::GetNotifyList(void)
+extern NOTIFY_ELEMENT_TYPE GetNotifyList(void)
 /*--------------------------------------------------------------
 Input    : -
 Output   : -             See SPC-file
@@ -114,12 +114,12 @@ Function : -
   return (0);
 }
 
-void System::DisableInterrupts(void)
+extern void DisableInterrupts(void)
 {
     cli();
 }
 
-void System::EnableInterrupts(void)
+extern void EnableInterrupts(void)
 {
     sei();
 }

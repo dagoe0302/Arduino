@@ -1,0 +1,2 @@
+extern void Main(void);
+extern void Setup(void);

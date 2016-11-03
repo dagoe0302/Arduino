@@ -78,7 +78,7 @@ typedef union
   long val;
 } NOTIFY_LIST;
 
-class System
+/*class System
 {
   public:
     void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element);
@@ -86,6 +86,13 @@ class System
     NOTIFY_ELEMENT_TYPE GetNotifyList(void);
     void EnableInterrupts(void);
     void DisableInterrupts(void);
-};
+};*/
+
+extern void Notify(NOTIFY_ELEMENT_TYPE);
+extern void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element);
+
+extern NOTIFY_ELEMENT_TYPE GetNotifyList(void);
+extern void EnableInterrupts(void);
+extern void DisableInterrupts(void);
 
 #endif

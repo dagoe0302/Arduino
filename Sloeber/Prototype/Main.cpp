@@ -46,7 +46,7 @@ typedef enum
 // Prototypes
 Adafruit_SSD1306 display(OLED_RESET);
 DHT dht(PIN_DHT11, DHTTYPE);
-System cSystem;
+//System cSystem;
 
 extern void SystemTimer(void);
 extern void DisplayTimer(void);
@@ -147,6 +147,8 @@ uint8_t DisplayViewNo = 0;
 //unsigned long lastDebounceTime = 0;
 //unsigned long debounceDelay = 100;
 float HeatIndex = 0.0;
+
+long test_read = 0;
 
 void DisplaySystemInfo(void)
 {
@@ -276,6 +278,8 @@ void HandleTimerTicks(void)
 {
   byte count;
 
+  test_read++;
+
   for (count = 0; count < NOF_TIMERS; count++)
   {
     if(timeoutarray[count] > 0)
@@ -308,7 +312,8 @@ void InitTimer()
 {
   byte count;
 
-  cSystem.DisableInterrupts();//stop interrupts
+  DisableInterrupts();//stop interrupts
+  //cSystem.DisableInterrupts();//stop interrupts
 
   for(count = 0; count < NOF_TIMERS; count++)
   {
@@ -328,7 +333,7 @@ void InitTimer()
   // enable timer compare interrupt
   TIMSK1 |= (1 << OCIE1A);
 
-  cSystem.EnableInterrupts();//allow interrupts
+  EnableInterrupts();//allow interrupts
 }
 
   // Set CS10 and CS12 bits for 1024 prescaler
@@ -390,7 +395,7 @@ void InitButton(void)
 
 void SystemTimer(void)
 {
-  cSystem.Notify(UPDATE_SYSTEM_TIME);
+  Notify(UPDATE_SYSTEM_TIME);
   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
 }
 
@@ -402,13 +407,13 @@ void DisplayTimer(void)
 
 void Dht11Timer(void)
 {
-  cSystem.Notify(READ_TEMP);
+  Notify(READ_TEMP);
   StartTimer(DHT11_TIMER, FIVE_SEC_TIMOUT);
 }
 
 void ButtonTimer(void)
 {
-  cSystem.Notify(BUTTON_PUSHED);
+  Notify(BUTTON_PUSHED);
  // StartTimer(BUTTON_TIMER, BUTTON_READ_TIMEOUT);
 }
 
@@ -465,18 +470,17 @@ void Setup()
   // init done
 }
 
-void Main(void)
+void MainLoop(void)
 {
-  long test_read;
+  //Setup();
 
-  Setup();
-
-  while(1)
-  {
-    input = cSystem.GetNotifyList();
+  /*while(1)
+  {*/
+    input = GetNotifyList();
     //Serial.println("GetNotifyList");
     //Serial.println(timeoutarray[SYSTEM_TIMER]);
-    test_read = timeoutarray[SYSTEM_TIMER];
+    //Serial.println(test_read);
+    //test_read = timeoutarray[SYSTEM_TIMER];
     switch(input)
     {
       case UPDATE_SYSTEM_TIME://SystemTimer notify
@@ -493,8 +497,8 @@ void Main(void)
           digitalWrite(PIN_LED, LOW);
           LedToggle = 1;
         }
-        cSystem.Notify(UPDATE_DISPLAY);
-        cSystem.ClearNotify(UPDATE_SYSTEM_TIME);
+        Notify(UPDATE_DISPLAY);
+        ClearNotify(UPDATE_SYSTEM_TIME);
       }
       break;
 
@@ -506,7 +510,7 @@ void Main(void)
 	      ClearButtonPush();
 	    }
 	    DisplayUpdate(DisplayViewNo);
-	    cSystem.ClearNotify(UPDATE_DISPLAY);
+	    ClearNotify(UPDATE_DISPLAY);
 	  }
 	  break;
 
@@ -516,8 +520,8 @@ void Main(void)
 	    {
 	      HasButtonBeenPushed = YES;
 	    }*/
-	    cSystem.Notify(UPDATE_DISPLAY);
-	    cSystem.ClearNotify(READ_BUTTON);
+	    Notify(UPDATE_DISPLAY);
+	    ClearNotify(READ_BUTTON);
 	  }
 	  break;
 
@@ -543,8 +547,8 @@ void Main(void)
 	        // button released
 	        Serial.println("Released");
 	        SetButtonPush();
-	        cSystem.Notify(UPDATE_DISPLAY);
-	        cSystem.ClearNotify(BUTTON_PUSHED);
+	        Notify(UPDATE_DISPLAY);
+	        ClearNotify(BUTTON_PUSHED);
 	     // }
 	      // else do nothing - still debouncing
 	    }
@@ -560,8 +564,8 @@ void Main(void)
         Temp = dht.readTemperature();
         HeatIndex = dht.computeHeatIndex(Temp, Humidity, false);
         //Serial.print(HeatIndex);
-        cSystem.Notify(UPDATE_DISPLAY);
-        cSystem.ClearNotify(READ_TEMP);
+        Notify(UPDATE_DISPLAY);
+        ClearNotify(READ_TEMP);
       }
       break;
 
@@ -571,5 +575,5 @@ void Main(void)
 	  }
 	  break;
     }
-  }
+  //}
 }

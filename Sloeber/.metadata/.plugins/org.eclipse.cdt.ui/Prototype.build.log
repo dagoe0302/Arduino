@@ -1,4 +1,4 @@
-20:27:13 **** Incremental Build of configuration Release for project Prototype ****
+17:00:00 **** Incremental Build of configuration Release for project Prototype ****
 make all 
 Building target: Prototype
 Printing size:
@@ -6,19 +6,19 @@ Printing size:
 /Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
 section                     size      addr
 .data                       1292   8389120
-.text                      16306         0
-.bss                         426   8390412
+.text                      16276         0
+.bss                         429   8390412
 .comment                      17         0
 .note.gnu.avr.deviceinfo      64         0
 .debug_info                 3004         0
 .debug_abbrev               2842         0
 .debug_line                   26         0
 .debug_str                   998         0
-Total                      24975
+Total                      24948
 
 
 Finished building target: Prototype
  
 
-20:27:13 Build Finished (took 75ms)
+17:00:00 Build Finished (took 73ms)
 
