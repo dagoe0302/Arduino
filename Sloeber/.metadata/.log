@@ -120,3 +120,16 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -perspective it.baeye
 
 !ENTRY it.baeyens.arduino.core 4 0 2016-11-03 19:08:03.155
 !MESSAGE No project found to build
+!SESSION 2016-11-04 09:36:05.662 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -perspective it.baeyens.arduino.application.perspective -keyring /Users/mkd/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -perspective it.baeyens.arduino.application.perspective -keyring /Users/mkd/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-04 09:36:09.567
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY it.baeyens.arduino.core 4 0 2016-11-04 09:42:13.065
+!MESSAGE No project found to build

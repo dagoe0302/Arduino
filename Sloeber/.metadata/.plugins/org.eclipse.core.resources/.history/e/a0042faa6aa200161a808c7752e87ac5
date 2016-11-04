@@ -5,6 +5,7 @@
 #include "Temperature.h"
 #include "Button.h"
 
+boolean HasButtonBeenPushed = NO;
 boolean LedToggle = 0;
 static NOTIFY_ELEMENT_TYPE input;
 
@@ -13,7 +14,8 @@ void Setup()
   // put your setup code here, to run once:
   Serial.begin(9600);
   Serial.println("Start");
-  pinMode(PIN_LED, OUTPUT); // initialize digital pin 13 as an output.
+  // initialize digital pin 13 as an output.
+  pinMode(PIN_LED, OUTPUT);
   digitalWrite(PIN_LED, HIGH);
   InitDisplay();
   InitTemperature();
@@ -31,7 +33,7 @@ void MainLoop(void)
 
   switch(input)
   {
-    case UPDATE_SYSTEM_TIME: //SystemTimer notify
+    case UPDATE_SYSTEM_TIME://SystemTimer notify
     {
    	  UpdateSystemTime();
       if (LedToggle == 1)

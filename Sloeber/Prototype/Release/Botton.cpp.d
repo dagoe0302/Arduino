@@ -1,4 +1,4 @@
-Main.cpp.o: ../Main.cpp \
+Botton.cpp.o: ../Botton.cpp \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/binary.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/WCharacter.h \
@@ -10,11 +10,8 @@ Main.cpp.o: ../Main.cpp \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/USBAPI.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h \
  /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega/pins_arduino.h \
- /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h \
  /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h \
- /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Display.h \
- /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Temperature.h \
- /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Button.h
+ /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h
 
 /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino/Arduino.h:
 
@@ -38,12 +35,6 @@ Main.cpp.o: ../Main.cpp \
 
 /Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega/pins_arduino.h:
 
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:
-
 /Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Timer.h:
 
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Display.h:
-
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Temperature.h:
-
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/Button.h:
+/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:

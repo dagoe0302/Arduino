@@ -1,9 +1,18 @@
-19:00:02 **** Build of configuration Release for project Prototype ****
+09:42:55 **** Clean-only build of configuration Release for project Prototype ****
+make clean 
+rm -f  ./libraries/Wire/src/utility/twi.c.d  ./core/WInterrupts.c.d ./core/hooks.c.d ./core/wiring.c.d ./core/wiring_analog.c.d ./core/wiring_digital.c.d ./core/wiring_pulse.c.d ./core/wiring_shift.c.d  ./Adafruit_GFX/glcdfont.c.d  arduino.ar  ./core/CDC.cpp.o ./core/HardwareSerial.cpp.o ./core/HardwareSerial0.cpp.o ./core/HardwareSerial1.cpp.o ./core/HardwareSerial2.cpp.o ./core/HardwareSerial3.cpp.o ./core/IPAddress.cpp.o ./core/PluggableUSB.cpp.o ./core/Print.cpp.o ./core/Stream.cpp.o ./core/Tone.cpp.o ./core/USBCore.cpp.o ./core/WInterrupts.c.o ./core/WMath.cpp.o ./core/WString.cpp.o ./core/abi.cpp.o ./core/hooks.c.o ./core/main.cpp.o ./core/new.cpp.o ./core/wiring.c.o ./core/wiring_analog.c.o ./core/wiring_digital.c.o ./core/wiring_pulse.S.o ./core/wiring_pulse.c.o ./core/wiring_shift.c.o  ./.ino.cpp.o ./Botton.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o  Prototype.hex  ./Prototype.ino.d  ./adafruit_ssd1306/examples/ssd1306_128x64_spi/ssd1306_128x64_spi.ino.d  ./adafruit_ssd1306/examples/ssd1306_128x64_i2c/ssd1306_128x64_i2c.ino.d  ./core/wiring_pulse.S.d  Prototype.elf  ./.ino.cpp.d ./Botton.cpp.d ./DHT.cpp.d ./Display.cpp.d ./Main.cpp.d ./System.cpp.d ./Temperature.cpp.d ./Timer.cpp.d  ./libraries/Wire/src/Wire.cpp.d  ./libraries/SPI/src/SPI.cpp.d  ./core/CDC.cpp.d ./core/HardwareSerial.cpp.d ./core/HardwareSerial0.cpp.d ./core/HardwareSerial1.cpp.d ./core/HardwareSerial2.cpp.d ./core/HardwareSerial3.cpp.d ./core/IPAddress.cpp.d ./core/PluggableUSB.cpp.d ./core/Print.cpp.d ./core/Stream.cpp.d ./core/Tone.cpp.d ./core/USBCore.cpp.d ./core/WMath.cpp.d ./core/WString.cpp.d ./core/abi.cpp.d ./core/main.cpp.d ./core/new.cpp.d  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.d  ./Adafruit_GFX/Adafruit_GFX.cpp.d 
+ 
+09:42:56 **** Build of configuration Release for project Prototype ****
 make all 
 Building file: ../.ino.cpp
 Starting C++ compile
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp" -o ".ino.cpp.o"  -Wall
 Finished building: ../.ino.cpp
+ 
+Building file: ../Botton.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Botton.cpp.d" -MT"Botton.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Botton.cpp" -o "Botton.cpp.o"  -Wall
+Finished building: ../Botton.cpp
  
 Building file: ../DHT.cpp
 Starting C++ compile
@@ -18,301 +27,17 @@ Finished building: ../Display.cpp
 Building file: ../Main.cpp
 Starting C++ compile
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-../Main.cpp: In function 'void MainLoop()':
-../Main.cpp:321:26: error: 'UpdateSystemTime' was not declared in this scope
-         UpdateSystemTime();
-                          ^
-make: *** [Main.cpp.o] Error 1
-19:00:27 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:02:13 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:111:19: error: expected initializer before 'GetSystemTime'
- extern *TimeUnits GetSystemTime(void);
-                   ^
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:02:36 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:94:1: warning: 'typedef' was ignored in this declaration
- };
- ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:111:19: error: expected initializer before 'GetSystemTime'
- extern *TimeUnits GetSystemTime(void);
-                   ^
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:04:42 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:111:20: error: expected initializer before 'GetSystemTime'
- extern *sTimeUnits GetSystemTime(void);
-                    ^
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:07:07 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:94:16: error: conflicting declaration 'typedef struct TimeUnits* sTimeUnits'
- } sTimeUnits, *sTimeUnits;
-                ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:94:3: note: previous declaration as 'typedef struct TimeUnits sTimeUnits'
- } sTimeUnits, *sTimeUnits;
-   ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:111:20: error: expected initializer before 'GetSystemTime'
- extern *sTimeUnits GetSystemTime(void);
-                    ^
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:08:05 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:08:18 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:117:11: error: 'system_time' was not declared in this scope
-   digit = system_time.day/10;
-           ^
-make: *** [Main.cpp.o] Error 1
-19:10:55 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:114:14: error: no match for 'operator=' (operand types are 'sTimeUnits {aka TimeUnits}' and 'sTimeUnits* {aka TimeUnits*}')
-   local_time = GetSystemTime();
-              ^
-../Main.cpp:114:14: note: candidates are:
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(const TimeUnits&)
- typedef struct TimeUnits
-                ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'const TimeUnits&'
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(TimeUnits&&)
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'TimeUnits&&'
-../Main.cpp:120:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day/10;
-                     ^
-../Main.cpp:122:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day%10;
-                     ^
-../Main.cpp:125:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour/10;
-                     ^
-../Main.cpp:127:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour%10;
-                     ^
-../Main.cpp:130:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute/10;
-                     ^
-../Main.cpp:132:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute%10;
-                     ^
-../Main.cpp:135:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second/10;
-                     ^
-../Main.cpp:137:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second%10;
-                     ^
-make: *** [Main.cpp.o] Error 1
-19:12:24 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:114:15: error: lvalue required as left operand of assignment
-   &local_time = GetSystemTime();
-               ^
-../Main.cpp:120:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day/10;
-                     ^
-../Main.cpp:122:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day%10;
-                     ^
-../Main.cpp:125:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour/10;
-                     ^
-../Main.cpp:127:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour%10;
-                     ^
-../Main.cpp:130:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute/10;
-                     ^
-../Main.cpp:132:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute%10;
-                     ^
-../Main.cpp:135:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second/10;
-                     ^
-../Main.cpp:137:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second%10;
-                     ^
-make: *** [Main.cpp.o] Error 1
-19:14:33 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:114:14: error: no match for 'operator=' (operand types are 'sTimeUnits {aka TimeUnits}' and 'sTimeUnits* {aka TimeUnits*}')
-   local_time = GetSystemTime();
-              ^
-../Main.cpp:114:14: note: candidates are:
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(const TimeUnits&)
- typedef struct TimeUnits
-                ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'const TimeUnits&'
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(TimeUnits&&)
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'TimeUnits&&'
-../Main.cpp:120:27: error: invalid operands of types 'uint8_t* {aka unsigned char*}' and 'int' to binary 'operator/'
-   digit = &local_time.day/10;
-                           ^
-../Main.cpp:122:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day%10;
-                     ^
-../Main.cpp:125:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour/10;
-                     ^
-../Main.cpp:127:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour%10;
-                     ^
-../Main.cpp:130:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute/10;
-                     ^
-../Main.cpp:132:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute%10;
-                     ^
-../Main.cpp:135:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second/10;
-                     ^
-../Main.cpp:137:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second%10;
-                     ^
-make: *** [Main.cpp.o] Error 1
-19:15:33 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:114:14: error: no match for 'operator=' (operand types are 'sTimeUnits {aka TimeUnits}' and 'sTimeUnits* {aka TimeUnits*}')
-   local_time = GetSystemTime();
-              ^
-../Main.cpp:114:14: note: candidates are:
-In file included from ../Main.cpp:6:0:
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(const TimeUnits&)
- typedef struct TimeUnits
-                ^
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'const TimeUnits&'
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note: TimeUnits& TimeUnits::operator=(TimeUnits&&)
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc/System.h:87:16: note:   no known conversion for argument 1 from 'sTimeUnits* {aka TimeUnits*}' to 'TimeUnits&&'
-../Main.cpp:120:27: error: invalid operands of types 'uint8_t* {aka unsigned char*}' and 'int' to binary 'operator/'
-   digit = &local_time.day/10;
-                           ^
-../Main.cpp:122:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->day%10;
-                     ^
-../Main.cpp:125:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour/10;
-                     ^
-../Main.cpp:127:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->hour%10;
-                     ^
-../Main.cpp:130:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute/10;
-                     ^
-../Main.cpp:132:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->minute%10;
-                     ^
-../Main.cpp:135:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second/10;
-                     ^
-../Main.cpp:137:21: error: base operand of '->' has non-pointer type 'sTimeUnits {aka TimeUnits}'
-   digit = local_time->second%10;
-                     ^
-make: *** [Main.cpp.o] Error 1
-19:16:45 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:120:23: error: request for member 'day' in 'local_time', which is of pointer type 'sTimeUnits* {aka TimeUnits*}' (maybe you meant to use '->' ?)
-   digit = &local_time.day/10;
-                       ^
-make: *** [Main.cpp.o] Error 1
-19:16:58 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void DisplaySystemInfo()':
-../Main.cpp:120:28: error: invalid operands of types 'uint8_t* {aka unsigned char*}' and 'int' to binary 'operator/'
-   digit = &local_time->day/10;
-                            ^
-make: *** [Main.cpp.o] Error 1
-19:17:08 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
 Finished building: ../Main.cpp
  
 Building file: ../System.cpp
 Starting C++ compile
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"System.cpp.d" -MT"System.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../System.cpp" -o "System.cpp.o"  -Wall
 Finished building: ../System.cpp
+ 
+Building file: ../Temperature.cpp
+Starting C++ compile
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Temperature.cpp.d" -MT"Temperature.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Temperature.cpp" -o "Temperature.cpp.o"  -Wall
+Finished building: ../Temperature.cpp
  
 Building file: ../Timer.cpp
 Starting C++ compile
@@ -492,7 +217,7 @@ Starting archiver
 Finished building: arduino.ar
  
 Starting combiner
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./Botton.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
 Finished building: Prototype.elf
  
 Create eeprom image
@@ -505,171 +230,34 @@ Printing size:
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
 /Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
 section                     size      addr
-.data                       1292   8389120
-.text                      16236         0
-.bss                         425   8390412
+.data                       1272   8389120
+.text                      16180         0
+.bss                         426   8390392
 .comment                      17         0
 .note.gnu.avr.deviceinfo      64         0
 .debug_info                 3004         0
 .debug_abbrev               2842         0
 .debug_line                   26         0
 .debug_str                   998         0
-Total                      24904
+Total                      24829
 
 
 Finished building target: Prototype
  
-21:37:23 **** Incremental Build of configuration Release for project Prototype ****
+09:44:36 **** Incremental Build of configuration Release for project Prototype ****
 make all 
-Building file: ../Display.cpp
+Building file: ../Botton.cpp
 Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-../Display.cpp: In function 'void DisplaySystemInfo()':
-../Display.cpp:87:3: error: 'sTimeUnits' was not declared in this scope
-   sTimeUnits *local_time;
-   ^
-../Display.cpp:87:15: error: 'local_time' was not declared in this scope
-   sTimeUnits *local_time;
-               ^
-../Display.cpp:89:30: error: 'GetSystemTime' was not declared in this scope
-   local_time = GetSystemTime();
-                              ^
-../Display.cpp: In function 'void DisplayTemp()':
-../Display.cpp:146:20: error: 'HeatIndex' was not declared in this scope
-   digit = (uint8_t)HeatIndex/10.0;
-                    ^
-make: *** [Display.cpp.o] Error 1
-21:38:08 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Display.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-../Display.cpp: In function 'void DisplayTemp()':
-../Display.cpp:147:20: error: 'HeatIndex' was not declared in this scope
-   digit = (uint8_t)HeatIndex/10.0;
-                    ^
-make: *** [Display.cpp.o] Error 1
-21:42:11 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Display.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-../Display.cpp: In function 'void DisplayTemp()':
-../Display.cpp:139:41: error: 'GetHeatIndex' was not declared in this scope
-   float local_heat_index = GetHeatIndex();
-                                         ^
-make: *** [Display.cpp.o] Error 1
-21:42:28 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Display.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-Finished building: ../Display.cpp
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Botton.cpp.d" -MT"Botton.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Botton.cpp" -o "Botton.cpp.o"  -Wall
+Finished building: ../Botton.cpp
  
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void Setup()':
-../Main.cpp:75:15: error: 'InitDisplay' was not declared in this scope
-   InitDisplay();
-               ^
-../Main.cpp: In function 'void MainLoop()':
-../Main.cpp:134:28: error: 'UpdateDisplayViewNo' was not declared in this scope
-        UpdateDisplayViewNo();
-                            ^
-../Main.cpp:137:20: error: 'DisplayViewNo' was not declared in this scope
-      DisplayUpdate(DisplayViewNo);
-                    ^
-../Main.cpp:137:33: error: 'DisplayUpdate' was not declared in this scope
-      DisplayUpdate(DisplayViewNo);
-                                 ^
-make: *** [Main.cpp.o] Error 1
-21:42:51 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void MainLoop()':
-../Main.cpp:138:20: error: 'DisplayViewNo' was not declared in this scope
-      DisplayUpdate(DisplayViewNo);
-                    ^
-make: *** [Main.cpp.o] Error 1
-21:44:15 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Display.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-Finished building: ../Display.cpp
- 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void MainLoop()':
-../Main.cpp:138:20: error: 'DisplayViewNo' was not declared in this scope
-      DisplayUpdate(DisplayViewNo);
-                    ^
-make: *** [Main.cpp.o] Error 1
-21:45:12 **** Incremental Build of configuration Release for project Prototype ****
-make all 
 Building file: ../Main.cpp
 Starting C++ compile
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
 Finished building: ../Main.cpp
  
-Building file: ../Temperature.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Temperature.cpp.d" -MT"Temperature.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Temperature.cpp" -o "Temperature.cpp.o"  -Wall
-Finished building: ../Temperature.cpp
- 
 Starting combiner
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
-/var/folders/5c/78vvdqkx0tb8nrs5glmzs52w0000gp/T//cc88r6mT.ltrans1.ltrans.o: In function `main':
-cc88r6mT.ltrans1.o:(.text.startup+0x724): undefined reference to `GetHeatIndex()'
-collect2: error: ld returned 1 exit status
-make: *** [Prototype.elf] Error 1
-21:51:14 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Display.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Display.cpp.d" -MT"Display.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Display.cpp" -o "Display.cpp.o"  -Wall
-Finished building: ../Display.cpp
- 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp: In function 'void Setup()':
-../Main.cpp:64:19: error: 'InitTemperature' was not declared in this scope
-   InitTemperature();
-                   ^
-../Main.cpp: In function 'void MainLoop()':
-../Main.cpp:175:22: error: 'ReadTemperature' was not declared in this scope
-      ReadTemperature();
-                      ^
-make: *** [Main.cpp.o] Error 1
-21:51:37 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-Finished building: ../Main.cpp
- 
-Building file: ../System.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"System.cpp.d" -MT"System.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../System.cpp" -o "System.cpp.o"  -Wall
-Finished building: ../System.cpp
- 
-Building file: ../Temperature.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Temperature.cpp.d" -MT"Temperature.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Temperature.cpp" -o "Temperature.cpp.o"  -Wall
-Finished building: ../Temperature.cpp
- 
-Building file: ../Timer.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Timer.cpp.d" -MT"Timer.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Timer.cpp" -o "Timer.cpp.o"  -Wall
-Finished building: ../Timer.cpp
- 
-Starting combiner
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
+"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./Botton.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
 Finished building: Prototype.elf
  
 Create eeprom image
@@ -682,111 +270,16 @@ Printing size:
 "/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
 /Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
 section                     size      addr
-.data                       1292   8389120
-.text                      16220         0
-.bss                         426   8390412
+.data                       1272   8389120
+.text                      16180         0
+.bss                         426   8390392
 .comment                      17         0
 .note.gnu.avr.deviceinfo      64         0
 .debug_info                 3004         0
 .debug_abbrev               2842         0
 .debug_line                   26         0
 .debug_str                   998         0
-Total                      24889
-
-
-Finished building target: Prototype
- 
-21:52:15 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building target: Prototype
-Printing size:
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
-section                     size      addr
-.data                       1292   8389120
-.text                      16220         0
-.bss                         426   8390412
-.comment                      17         0
-.note.gnu.avr.deviceinfo      64         0
-.debug_info                 3004         0
-.debug_abbrev               2842         0
-.debug_line                   26         0
-.debug_str                   998         0
-Total                      24889
-
-
-Finished building target: Prototype
- 
-21:53:05 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-../Main.cpp:3:19: warning: missing terminating " character
- #include "Timer.h""
-                   ^
-../Main.cpp:3:19: warning: extra tokens at end of #include directive
-Finished building: ../Main.cpp
- 
-Starting combiner
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
-Finished building: Prototype.elf
- 
-Create eeprom image
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -R .eeprom  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.hex"
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.eep"
-Finished building: Prototype.hex
- 
-Building target: Prototype
-Printing size:
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
-section                     size      addr
-.data                       1292   8389120
-.text                      16220         0
-.bss                         426   8390412
-.comment                      17         0
-.note.gnu.avr.deviceinfo      64         0
-.debug_info                 3004         0
-.debug_abbrev               2842         0
-.debug_line                   26         0
-.debug_str                   998         0
-Total                      24889
-
-
-Finished building target: Prototype
- 
-21:53:21 **** Incremental Build of configuration Release for project Prototype ****
-make all 
-Building file: ../Main.cpp
-Starting C++ compile
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-g++" -c -g -Os -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -flto -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10609 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR   -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/cores/arduino" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/variants/mega" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/Wire/src" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI" -I"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/packages/arduino/hardware/avr/1.6.14/libraries/SPI/src" -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/inc -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Adafruit_GFX -I/Users/mkd/GitHub/Arduino/Sloeber/Prototype/adafruit_ssd1306 -MMD -MP -MF"Main.cpp.d" -MT"Main.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../Main.cpp" -o "Main.cpp.o"  -Wall
-Finished building: ../Main.cpp
- 
-Starting combiner
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560 -o "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"   ./.ino.cpp.o ./DHT.cpp.o ./Display.cpp.o ./Main.cpp.o ./System.cpp.o ./Temperature.cpp.o ./Timer.cpp.o  ./libraries/Wire/src/utility/twi.c.o  ./libraries/Wire/src/Wire.cpp.o  ./libraries/SPI/src/SPI.cpp.o  ./adafruit_ssd1306/Adafruit_SSD1306.cpp.o  ./Adafruit_GFX/Adafruit_GFX.cpp.o ./Adafruit_GFX/glcdfont.c.o   arduino.ar   "-L/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release" -lm
-Finished building: Prototype.elf
- 
-Create eeprom image
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -R .eeprom  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.hex"
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf" "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.eep"
-Finished building: Prototype.hex
- 
-Building target: Prototype
-Printing size:
-"/Applications/sloeber.app/Contents/Eclipse/arduinoPlugin/tools/arduino/avr-gcc/4.9.2-atmel3.5.3-arduino2/bin/avr-size" -A "/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf"
-/Users/mkd/GitHub/Arduino/Sloeber/Prototype/Release/Prototype.elf  :
-section                     size      addr
-.data                       1292   8389120
-.text                      16220         0
-.bss                         426   8390412
-.comment                      17         0
-.note.gnu.avr.deviceinfo      64         0
-.debug_info                 3004         0
-.debug_abbrev               2842         0
-.debug_line                   26         0
-.debug_str                   998         0
-Total                      24889
+Total                      24829
 
 
 Finished building target: Prototype
