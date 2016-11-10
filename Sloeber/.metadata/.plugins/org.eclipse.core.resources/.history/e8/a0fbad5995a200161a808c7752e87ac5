@@ -6,14 +6,14 @@
 typedef void (*P_TIMER_FUNC)(void);
 
 static void SystemTimer(void);
-//static void DisplayTimer(void);
+static void DisplayTimer(void);
 static void Dht11Timer(void);
 static void ButtonTimer(void);
 
 const P_TIMER_FUNC timer_func_array[NOF_TIMERS] =
 {
   SystemTimer,
-  //DisplayTimer,
+  DisplayTimer,
   Dht11Timer,
   ButtonTimer,
 };
@@ -88,11 +88,11 @@ void SystemTimer(void)
   StartTimer(SYSTEM_TIMER, ONE_SEC_TIMOUT);
 }
 
-//void DisplayTimer(void)
-//{
+void DisplayTimer(void)
+{
 //  cSystem.Notify(UPDATE_DISPLAY);
-//  StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
-//}
+  StartTimer(DISPLAY_TIMER, ONE_SEC_TIMOUT);
+}
 
 void Dht11Timer(void)
 {

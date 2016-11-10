@@ -102,6 +102,16 @@ typedef struct TimeUnits
   uint8_t year;
 } sTimeUnits;
 
+/*class System
+{
+  public:
+    void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element);
+    void Notify(NOTIFY_ELEMENT_TYPE);
+    NOTIFY_ELEMENT_TYPE GetNotifyList(void);
+    void EnableInterrupts(void);
+    void DisableInterrupts(void);
+};*/
+
 extern void Notify(NOTIFY_ELEMENT_TYPE);
 extern void ClearNotify(NOTIFY_ELEMENT_TYPE notify_element);
 extern NOTIFY_ELEMENT_TYPE GetNotifyList(void);

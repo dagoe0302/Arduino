@@ -117,12 +117,12 @@ Function : -
 
 extern void DisableInterrupts(void)
 {
-  cli();
+    cli();
 }
 
 extern void EnableInterrupts(void)
 {
-  sei();
+    sei();
 }
 
 extern sTimeUnits *GetSystemTime(void)
