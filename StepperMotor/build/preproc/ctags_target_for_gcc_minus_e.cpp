@@ -1,11 +1,6 @@
 # 1 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
-
-
-
-
-
-
-
+// https://create.arduino.cc/projecthub/debanshudas23/getting-started-with-stepper-motor-28byj-48-3de8c9
+# 10 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void setup()
 {
   pinMode(2,0x1);
@@ -48,7 +43,7 @@ void loop()
   i=0;
   while(i<512)
   {
-  onestep();
-  i++;
+    onestep();
+    i++;
   }
 }

@@ -1,5 +1,7 @@
 #include <Arduino.h>
 #line 1 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+// https://create.arduino.cc/projecthub/debanshudas23/getting-started-with-stepper-motor-28byj-48-3de8c9
+
 #define A 2
 #define B 3
 #define C 4
@@ -7,15 +9,15 @@
  
 #define NUMBER_OF_STEPS_PER_REV 512
 
-#line 8 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+#line 10 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void setup();
-#line 16 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+#line 18 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void write(int a,int b,int c,int d);
-#line 24 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+#line 26 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void onestep();
-#line 44 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+#line 46 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void loop();
-#line 8 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
+#line 10 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/StepperMotor.ino"
 void setup()
 {
   pinMode(A,OUTPUT);
@@ -58,7 +60,7 @@ void loop()
   i=0;
   while(i<NUMBER_OF_STEPS_PER_REV)
   {
-  onestep();
-  i++;
+    onestep();
+    i++;
   }
 }
