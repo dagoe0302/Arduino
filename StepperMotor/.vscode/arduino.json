@@ -1,0 +1,6 @@
+{
+    "sketch": "StepperMotor.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "/dev/tty.usbserial-1440"
+}

@@ -1,0 +1,7 @@
+#line 1 "/Users/mikaelsmacbook/Documents/projects/Arduino/StepperMotor/.vscode/arduino.json"
+{
+    "sketch": "StepperMotor.ino",
+    "output": "build",
+    "board": "arduino:avr:uno",
+    "port": "/dev/tty.usbserial-1440"
+}

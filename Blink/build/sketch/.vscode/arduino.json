@@ -1,0 +1,8 @@
+#line 1 "/Users/mikaelsmacbook/Documents/projects/Arduino/Blink/.vscode/arduino.json"
+{
+    "sketch": "Blink.ino",
+    "output": "build",
+    "port": "/dev/tty.usbserial-1440",
+    "board": "arduino:avr:uno",
+    "programmer": "arduinoisp"
+}

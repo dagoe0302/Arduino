@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/mikaelsmacbook/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/Users/mikaelsmacbook/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/standard"
+  },
+  {
+    "Sourcefile": "/Users/mikaelsmacbook/Documents/projects/Arduino/Blink/build/sketch/Blink.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
